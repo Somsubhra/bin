@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# Find the machine's ip address
+# Usage: myip
+
+ifconfig | grep "inet addr" | awk {'printf $2"\n"'}
+
