@@ -3,5 +3,5 @@
 # Login as postgres user
 # Usage: pgsql
 
-sudo -u postgres -i
+sudo -u postgres psql
 
