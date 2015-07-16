@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# Power off all VBox VMs
+# Usage vmoff
+
+VBoxManage list runningvms | sed -r 's/.*\{(.*)\}/\1/' | xargs -L1 -I {} VBoxManage controlvm {} savestate
