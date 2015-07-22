@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# Lock i3 WM
+# Usage: lock
+
+i3lock -c 000000 -n
