@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# Preview a PDF document
+# Usage: pdfview <pdf_name>
+
+evince-previewer $1
