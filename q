@@ -2,5 +2,6 @@
 
 # Change the audio volume
 # Usage: q <volume>
-
-amixer -D pulse sset Master $1%
+scale=10
+inp=$1
+amixer -D pulse sset Master $(( scale * inp ))%
